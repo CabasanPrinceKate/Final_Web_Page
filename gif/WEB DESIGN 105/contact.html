@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Info-Tech| Gallery</title>
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="imgs/logo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="menu-icons open">
+                    <i class="icon ion-md-menu"></i>
+                </div>
+
+                <ul class="nav-list">
+                    <div class="menu-icons close">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav item">
+                        <a href="index.html" class="nav-link current">Home</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="contact-title">
+                    <h1>To This Website!</h1>
+                    <h2>I am always ready to serve you!</h2>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contact-form" method="post" action="contact-form-handler.php">
+                        <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                        <br>
+                        <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+                        <br>
+                            <textarea name="message" class="form-control" placeholder="Message" row="4" required>
+                            </textarea><br>
+
+                            <input type="submit" class="form-control submit" value="SEND MESSAGE">
+                    </form>
+                </div>
+
+
+            </div>
+            
+        </section>
+
+    </main>
+    
+    <footer>
+        <p>&copy;2020 Lessons. All rights reserved</p>
+    </footer> 
+
+    
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

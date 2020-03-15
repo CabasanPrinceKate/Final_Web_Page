@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Info-Tech| Portfolio</title>
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="imgs/logo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="menu-icons open">
+                    <i class="icon ion-md-menu"></i>
+                </div>
+
+                <ul class="nav-list">
+                    <div class="menu-icons close">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav item">
+                        <a href="index.html" class="nav-link current">Home</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <section class="hero3">
+        <div class="container">
+            <div class="main-message3">
+                <h1>portfolio</h1>
+            </div>
+<div class="nav2">
+    <a class="a active" href="#">Profile</a>
+    <a class="b" href="#">Educational Background</a>
+    <a class="c" href="#">Experience</a>
+    <a class="d" href="#">References</a>
+</div>
+
+<div class="content">
+        <div class="profile">
+            <h1>Profile</h1>
+            <p>This website contains some lessons and in IT-course and also provides informations about the creator of the Web.
+                If you want to learn IT subjects and to know more about the course take the time to explore more on this Website.
+            </p>
+            <p>This website contains some lessons and in IT-course and also provides informations about the creator of the Web.
+                If you want to learn IT subjects and to know more about the course take the time to explore more on this Website.
+            </p>
+        </div>
+
+        <div class="edback">
+            <h1>Educational-Background</h1>
+            <p>This website contains some lessons and in IT-course and also provides informations about the creator of the Web.
+                If you want to learn IT subjects and to know more about the course take the time to explore more on this Website.
+            </p>
+            <p>This website contains some lessons and in IT-course and also provides informations about the creator of the Web.
+                If you want to learn IT subjects and to know more about the course take the time to explore more on this Website.
+            </p>
+        </div>
+        <div class="exp">
+            <h1>Experience</h1>
+            <p>This website contains some lessons and in IT-course and also provides informations about the creator of the Web.
+                If you want to learn IT subjects and to know more about the course take the time to explore more on this Website.
+            </p>
+            <p>This website contains some lessons and in IT-course and also provides informations about the creator of the Web.
+                If you want to learn IT subjects and to know more about the course take the time to explore more on this Website.
+            </p>
+        </div>
+        <div class="ref">
+            <h1>References</h1>
+            <p>This website contains some lessons and in IT-course and also provides informations about the creator of the Web.
+                If you want to learn IT subjects and to know more about the course take the time to explore more on this Website.
+            </p>
+            <p>This website contains some lessons and in IT-course and also provides informations about the creator of the Web.
+                If you want to learn IT subjects and to know more about the course take the time to explore more on this Website.
+            </p>
+        </div>
+
+</div>
+
+
+ </div>
+ <script type="text/javascript" src="Download jQuery _ jQuery_files/jquery-1.11.3.js.download"></script>
+<script  type="text/javascript">
+                
+                    $(document).ready(function(){
+                        $('a').click(function(){
+                         /*alert("I am click");*/  
+                          var selected = $(this);
+                           $('a').removeClass('active');
+                         $(selected).addClass('active');
+                        });
+                        var $a =$('.a'),
+                        $b =$('.b'),
+                        $c =$('.c'),
+                        $d =$('.d'),
+                        $profile =$('.profile'),
+                        $edback =$('.edback'),
+                        $exp =$('.exp'),
+                        $ref =$('.ref');
+
+                        $a.click(function(){
+                            $profile.fadeIn();
+                            $edback.fadeOut();
+                            $exp.fadeOut();
+                            $ref.fadeOut();
+                        });
+                        $b.click(function(){
+                            $edback.fadeIn();
+                            $profile.fadeOut();
+                            $exp.fadeOut();
+                            $ref.fadeOut();
+                        });
+                        $c.click(function(){
+                            $exp.fadeIn();
+                            $profile.fadeOut();
+                            $edback.fadeOut();
+                            $ref.fadeOut();
+                        });
+                        $d.click(function(){
+                            $ref.fadeIn();
+                            $profile.fadeOut();
+                            $exp.fadeOut();
+                            $edback.fadeOut();
+                        });
+                    });
+                </script>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy;2020 Lessons. All rights reserved</p>
+    </footer> 
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

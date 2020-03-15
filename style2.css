@@ -1,0 +1,368 @@
+.hero3{
+    width: 100%;
+    height: 90vh;
+    background: url("gif/gif5.gif") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero3::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: skyblue;
+    background-size: cover;
+}
+.nav2{
+    width: 350px;
+    height: auto;
+    background-color: gray;
+    position: absolute;
+    top: 20%;
+    height: 0;
+    flex-direction: column;
+}
+.nav2 a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana;
+    font-weight: bold;
+    height: 80px;
+    margin: 5px 0;
+    float:none;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    line-height: 90px;
+    text-align: center;
+    transition: 300ms;
+}
+a.active{
+    background-color: white;
+    color: black;
+}
+a.active, .nav2 a:hover{
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+.a{
+    width: 95%;
+}
+.b{
+    width: 85%;
+}
+.c{
+    width: 80%;
+}
+.d{
+    width: 90%;
+}
+.content{
+    position: absolute;
+    width: 1000px;
+    min-height: 450px;
+    height: auto;
+   
+    right:  0;
+    top: 15%;
+    right: 3%;
+}
+.profile{
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    color: rgb(247, 247, 247);
+    font-family: verdana;
+    flex-direction: column;
+}
+.profile h1{
+    font-size: 50px;
+    padding-right: 80px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.profile p{
+    font-size: 20px;
+    padding: 5px 0;
+    opacity: 0.6;
+}
+.edback{
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    color: rgb(255, 255, 255);
+    font-family: verdana;
+    flex-direction: column;
+}
+.edback h1{
+    font-size: 50px;
+    padding-right: 60px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.edback p{
+    font-size: 20px;
+    padding: 5px 0;
+    opacity: 0.6;
+}
+.exp{
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    color: rgb(255, 255, 255);
+    font-family: verdana;
+    flex-direction: column;
+}
+.exp h1{
+    font-size: 50px;
+    padding-right: 60px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.exp p{
+    font-size: 20px;
+    padding: 5px 0;
+    opacity: 0.6;
+}
+.ref{
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    color: white;
+    font-family: verdana;
+    flex-direction: column;
+}
+.ref h1{
+    font-size: 50px;
+    padding-right: 60px;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+}
+.ref p{
+    font-size: 20px;
+    padding: 5px 0;
+    opacity: 0.6;
+}
+
+/*media Quiries*/
+
+
+@media screen and (min-width: 350px){
+    .main-message3  {
+        transform: translateY(40%);
+    }
+}
+@media only screen and (max-width: 469px){
+    .main-message3 h1{
+        text-align: center;
+    }
+    .nav2 a{
+        font-size: 9px;
+        width: auto;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        z-index: -1;
+    }
+    a.active, .nav2 a:hover{
+        width: auto;
+    }
+    .nav2{
+        padding-left: 55px;
+        width: 100%;
+        top: 20px;
+        z-index: 99;
+    }
+    .main-message3 h1{
+        font-size: 3rem;
+        text-align: center0;
+    }
+    .content{
+        bottom: 10%;
+        width: 100%;
+        height: 100%;
+        top: 10%;
+        
+    }
+    .profile h1{
+        font-size: 25px;
+        padding-right: 0;
+        border-bottom: none;
+    }
+    .profile p{
+        background-color: rgba(68, 115, 146, 0.712);
+        padding-left: 20px;
+        font-size:18px;
+        padding-right: 0;
+        border-bottom: none;
+    }
+   
+    .profile{
+        left: 1%;
+        text-align: center;
+        bottom: 250px;
+    }
+    .edback h1{
+        font-size: 25px;
+        padding-right: 0;
+        border-bottom: none;
+    }
+    .edback p{
+        padding-left: 20px;
+        font-size:18px;
+        padding-right: 0;
+        border-bottom: none;
+    }
+   
+    .edback{
+        left: 1%;
+        text-align: center;
+        bottom: 250px;
+    }
+    .exp h1{
+        font-size: 25px;
+        padding-right: 0;
+        border-bottom: none;
+    }
+    .exp p{
+        padding-left: 20px;
+        font-size:18px;
+        padding-right: 0;
+        border-bottom: none;
+    }
+   
+    .exp{
+        left: 1%;
+        text-align: center;
+        bottom: 250px;
+    }
+    .ref h1{
+        font-size: 25px;
+        padding-right: 0;
+        border-bottom: none;
+    }
+    .ref p{
+        padding-left: 20px;
+        font-size:18px;
+        padding-right: 0;
+        border-bottom: none;
+    }
+   
+    .ref{
+        left: 1%;
+        text-align: center;
+        bottom: 250px;
+    }
+}
+        
+@media only screen and (max-width: 768px){
+    .main-message3 h1{
+        text-align: center;
+    }
+    .nav2 a{
+        font-size: 10px;
+        width: auto;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        z-index: -1;
+    }
+    a.active, .nav2 a:hover{
+        width: auto;
+    }
+    .nav2{
+        padding-left: 55px;
+        width: 100%;
+        top: 20px;
+        z-index: 99;
+    }
+    .main-message3 h1{
+        font-size: 3rem;
+        text-align: center0;
+    }
+    .content{
+        bottom: 10%;
+        width: 100%;
+        height: 100%;
+        top: 10%;
+        
+    }
+    .profile h1{
+        font-size: 25px;
+        padding-right: 0;
+        border-bottom: none;
+    }
+    .profile p{
+        padding-left: 10px;
+        background-size: cover;
+        background-color: rgba(68, 115, 146, 0.712);
+        font-size:18px;
+        padding-right: 0;
+        border-bottom: none;
+    }
+   
+    .profile{
+        left: 1%;
+        text-align: center;
+        bottom: 250px;
+    }
+    .edback h1{
+        font-size: 25px;
+        padding-right: 0;
+        border-bottom: none;
+    }
+    .edback p{
+        padding-left: 20px;
+        font-size:18px;
+        padding-right: 0;
+        border-bottom: none;
+    }
+   
+    .edback{
+        left: 1%;
+        text-align: center;
+        bottom: 250px;
+    }
+    .exp h1{
+        font-size: 25px;
+        padding-right: 0;
+        border-bottom: none;
+    }
+    .exp p{
+        padding-left: 20px;
+        font-size:18px;
+        padding-right: 0;
+        border-bottom: none;
+    }
+   
+    .exp{
+        left: 1%;
+        text-align: center;
+        bottom: 250px;
+    }
+    .ref h1{
+        font-size: 25px;
+        padding-right: 0;
+        border-bottom: none;
+    }
+    .ref p{
+        padding-left: 20px;
+        font-size:18px;
+        padding-right: 0;
+        border-bottom: none;
+    }
+   
+    .ref{
+        left: 1%;
+        text-align: center;
+        bottom: 250px;
+    }
+    
+    
+}
